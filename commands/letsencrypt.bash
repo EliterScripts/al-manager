@@ -1,2 +1,2 @@
 #!/bin/bash
-letsencrypt --apache -d "$1"
+certbot certonly --apache -d "$1"
