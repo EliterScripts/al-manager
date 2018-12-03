@@ -54,5 +54,5 @@ function commands.reloadApache()
 end
 
 function commands.addLetsEncrypt(domain)
-    executeCommand("letsenecrypt certonly --apache -d " .. domain)
+    executeCommand("bash " .. rootPath .. "/commands/letsencrypt.bash " .. domain)
 end
