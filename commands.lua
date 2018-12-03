@@ -45,4 +45,6 @@ function commands.getDate()
     return executeCommand("date")
 end
 
-function commands
+function commands.addLetsEncrypt(domain)
+    
+end
