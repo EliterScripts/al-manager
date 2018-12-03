@@ -45,4 +45,8 @@ do
     file = io.open("/etc/apache2/sites-available/regular-" .. domain_name .. ".conf", "w")
     file:write(plaintext_output_string)
     file:close()
+
+    commands.enableSite("regular-" .. domain_name .. ".conf")
+
+    commands.reloadApache()
 end

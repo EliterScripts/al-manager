@@ -45,6 +45,14 @@ function commands.getDate()
     return executeCommand("date")
 end
 
+function commands.enableSite(filename)
+    executeCommand("a2ensite " .. filename)
+end
+
+function commands.reloadApache()
+    executeCommand("systemctl reload apache2")
+end
+
 function commands.addLetsEncrypt(domain)
-    
+    executeCommand("letsenecrypt certonly --apache -d " .. domain)
 end
