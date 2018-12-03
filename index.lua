@@ -37,7 +37,8 @@ do
     addHistory({
         domain_name = domain_name,
         admin_email = admin_email,
-        annotation = "simply creating a website that is simple. Creating HTTP site."
+        annotation = "simply creating a website that is simple. Creating HTTP site.",
+        action_code = 1000
     })
 
     --writes the plaintext site

@@ -44,3 +44,5 @@ end
 function commands.getDate()
     return executeCommand("date")
 end
+
+function commands
