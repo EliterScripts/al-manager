@@ -49,4 +49,6 @@ do
     commands.enableSite("regular-" .. domain_name .. ".conf")
 
     commands.reloadApache()
+
+    commands.addLetsEncrypt(domain_name)
 end
