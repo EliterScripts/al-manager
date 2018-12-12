@@ -56,3 +56,7 @@ end
 function commands.addLetsEncrypt(domain)
     executeCommand("bash " .. rootPath .. "/commands/letsencrypt.bash " .. domain)
 end
+
+function commands.addSiteDir(domain)
+	executeCommand("mkdir -p /var/www/" .. domain)
+end

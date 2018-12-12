@@ -25,7 +25,7 @@ do
         end
          local newContent = ""
          if(string.len(content) <= 2)then
-            newContent = json.encode(addHistoryTable)
+            newContent = json.encode({addHistoryTable})
         else
             table.insert(contentHistory, addHistoryTable)
             newContent = json.encode( contentHistory )

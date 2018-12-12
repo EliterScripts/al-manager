@@ -80,6 +80,8 @@ do
     file:write(https_output_string)
     file:close()
     
+    commands.addSiteDir(domain_name)
+
     commands.enableSite("regular-" .. domain_name .. "-secure.conf")
 
     commands.reloadApache()
